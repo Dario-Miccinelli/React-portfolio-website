@@ -6,22 +6,18 @@ body {
   background-color: #162E83;
 }
 .Title-Header {
-  font-size: 6.67rem;
+  font-size: 4.67rem;
 }
 
-header h1 span {
-  color: #00bfff;
+.Title-Header-smaller {
+  font-size: 3,33rem!important;
 }
 
-.skills .col-md-4 div {
-  margin: 10px 0;
-}
-
-.experience h4 {
-  color: #00bfff;
-}
-
-footer {
-  background-color: #162E83 ;
-  color: #fff;
+.DevTextHeader {
+  font-size: 8.5rem;
+  content: attr(data-text);
+  -webkit-text-stroke: 2px #0067FE;
+  -webkit-text-fill-color: transparent;
+  line-height: 132px;
+  font-weight: bold;
 }

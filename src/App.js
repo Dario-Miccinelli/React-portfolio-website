@@ -1,28 +1,46 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// Importa le icone di GitHub e LinkedIn dal pacchetto delle icone brand
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
-    
+
     <div>
       {/* Header Section */}
       <header className="bg-custom-blue text-white py-5 min-vh-100 d-flex">
-        <div className="container">
+        <div className="container align-items-between d-flex flex-column justify-content-between">
           <div className="d-flex">
             <h1 className='Title-Header w-75'>Hej, I’m <br></br> &lt;Dario Miccinelli /&gt; </h1>
-            <h4 className='w-25'>Based in Aarhus</h4>
+              
+              <h4 className='w-25'> <FontAwesomeIcon icon={faLocationDot}   size="1x" /> Based in Aarhus</h4>
           </div>
 
-          <div className="d-flex flex-column gap-3 mb-3">
-            <a href="https://www.linkedin.com/in/dariomiccinelli/" className=" " target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-            <a href="https://github.com/Dario-Miccinelli" className="" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-            <p>Email: <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-info">DarioMiccinelliDK@outlook.com</a></p>
-            <p>Phone: +45 91738559 | Based in Aarhus</p>
-          </div>
-          
 
-          <h2 className="mb-4">Full Stack Developer</h2>
+          <div className='d-flex align-items-end'>
+            <div className="d-flex flex-column gap-3 w-25">
+              <div className='d-flex gap-3'>
+              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+              
+              </div>
+       
+              <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-white" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              <a href="https://github.com/Dario-Miccinelli" className="text-white" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+              <p>Email: <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-white">DarioMiccinelliDK@outlook.com</a></p>
+              <p>Phone: +45 91738559</p>
+            </div>
+           
+            <div className="d-flex w-75 justify-content-end text-end">
+              <h1 className='DevTextHeader'>Full Stack Developer</h1>
+            </div>
+
+          </div>
         </div>
       </header>
 
