@@ -85,7 +85,7 @@ body {
   }
 
   #AboutMeText p {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
   }
 
   .titleHeaderDiv,
@@ -113,50 +113,50 @@ body {
   #Boolean>div.ms-5>h1 {
     padding: 0px !important;
     margin: 0rem !important;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #Systrategy>div.ms-5>h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
     padding: 0px !important;
     margin: 0rem !important;
   }
 
   #EV>div.ms-5>h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
     padding: 0px !important;
     margin: 0rem !important;
   }
 
   #Boolean>div.container>div {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   #Systrategy>div.container>div {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   #EV>div.container>div {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
 
   #Boolean>div.container>div>div>div>h1,
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem !important;
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem !important;
   }
 
   #Systrategy>div.container>div>div>div>h1,
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem !important;
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem !important;
   }
 
   #EV>div.container>div>div>div>h1,
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem !important;
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem !important;
   }
 
 
@@ -189,27 +189,27 @@ body {
 
 
   .experience .colorLightBlue {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   #Boolean,
   #Systrategy,
   #EV {
     margin: 0px 1rem;
-    line-height: 1rem;
+    line-height: 0.9rem;
   }
 
 
   #Boolean .experienceTitle {
-    margin: 0rem 0.5rem !important;
+    margin: 1rem 0.5rem !important;
   }
 
   #Systrategy .experienceTitle {
-    margin: 0rem 0.5rem !important;
+    margin: 1rem 0.5rem !important;
   }
 
   #EV .experienceTitle {
-    margin: 0rem 0.5rem !important;
+    margin: 1rem 0.5rem !important;
   }
 
   .headerLink {
