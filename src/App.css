@@ -1,23 +1,25 @@
 body {
-  font-family: 'DM Sans', sans-serif!important;
+  font-family: 'DM Sans', sans-serif !important;
 }
 
 .bg-custom-blue {
   background-color: #162E83;
 }
+
 .Title-Header {
   font-size: 4.67rem;
 }
 
 .Title-Header-smaller {
-  font-size: 3,33rem!important;
+  font-size: 3, 33rem !important;
 }
 
 .experience .DevTextHeader::after {
   content: "Month";
   font-size: 20px;
-  margin-left: 10px;    
+  margin-left: 10px;
 }
+
 .DevTextHeader {
   font-size: 8.5rem;
   content: attr(data-text);
@@ -28,7 +30,7 @@ body {
 }
 
 .ImgAboutMe {
-    height: 100vh;
+  height: 100vh;
 }
 
 .colorLightBlue {
@@ -40,69 +42,405 @@ body {
 }
 
 .experience {
-  border-bottom: 5px  solid #0067FE;
+  border-bottom: 5px solid #0067FE;
 }
 
-/* TIMELINE PART */
+/* Mobile devices (max-width: 767px) */
+@media only screen and (max-width: 767px) {
 
-/* 
-.timeline li{
-  list-style: none;
-  float: left;
-  width: 16%;
-  position: relative;
-  text-align: left;
+
+  #Title-Header {
+    width: 100% !important;
+  }
+
+
+  .Title-Header {
+    font-size: 2rem;
+  }
+
+  .DevTextHeader {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  #devTextDiv {
+    width: 70% !important;
+  }
+
+  .FontAwesomeIcon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  .PersonalImage {
+    display: none;
+  }
+
+  #AboutMeText {
+    padding: 0px !important;
+  }
+
+  #AboutMeText p {
+    font-size: 0.9rem !important;
+  }
+
+  .titleHeaderDiv,
+  .headerFooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+  /* experience work */
+
+  #sectSkillsWorkExperience div {
+    padding: 0px;
+    margin: 0rem !important;
+    margin-top: 0.5rem !important;
+    width: 100% !important;
+  }
+
+  #sectSkillsWorkExperience h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  #Boolean>div.ms-5>h1 {
+    padding: 0px !important;
+    margin: 0rem !important;
+    font-size: 1.5rem;
+  }
+
+  #Systrategy>div.ms-5>h1 {
+    font-size: 1.5rem !important;
+    padding: 0px !important;
+    margin: 0rem !important;
+  }
+
+  #EV>div.ms-5>h1 {
+    font-size: 1.5rem !important;
+    padding: 0px !important;
+    margin: 0rem !important;
+  }
+
+  #Boolean>div.container>div {
+    font-size: 0.8rem;
+  }
+
+  #Systrategy>div.container>div {
+    font-size: 0.8rem;
+  }
+
+  #EV>div.container>div {
+    font-size: 0.8rem;
+  }
+
+
+  #Boolean>div.container>div>div>div>h1,
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #Systrategy>div.container>div>div>div>h1,
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #EV>div.container>div>div>div>h1,
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+
+  .experience .DevTextHeader::after {
+    margin-left: 2px;
+  }
+
+  #Systrategy .DevTextHeader::after {
+    margin-left: 5px;
+  }
+
+  #EV .DevTextHeader::after {
+    margin-left: 5px;
+  }
+
+  .experience .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+  #Systrategy .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+  #EV .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+
+  .experience .colorLightBlue {
+    font-size: 1rem;
+  }
+
+  #Boolean,
+  #Systrategy,
+  #EV {
+    margin: 0px 1rem;
+    line-height: 1rem;
+  }
+
+
+  #Boolean .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  #Systrategy .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  #EV .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  #sectionFooter .DevTextHeader,
+  .colorLightBlue {
+    font-size: 2rem;
+  }
+
+  .footerFooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #contactContainer {
+    width: 35% !important;
+  }
+
+  #contactContainerHeader {
+    width: 35% !important;
+  }
+
+  #root>div>header>div {
+    margin: 1rem 0.8rem;
+  }
+
+
+
 }
 
-.timeline li:before{
-  content: "";
-  width: 50px;
-  height: 50px;
-  border: 3px solid #162E83;
-  border-radius: 50%;
-  display: block;
-  text-align: center;
-  line-height: 50px;
-  margin: 0 auto 10px auto;
-  background: #F1F1F1;
-  color: #000;
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+
+
+  #Title-Header {
+    width: 100% !important;
+  }
+
+
+  .Title-Header {
+    font-size: 2rem;
+  }
+
+  .DevTextHeader {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  #devTextDiv {
+    width: 70% !important;
+  }
+
+  .FontAwesomeIcon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  .ImgAboutMe {
+    display: none;
+  }
+
+  #AboutMeText {
+    padding: 0px !important;
+  }
+
+  #AboutMeText p {
+    font-size: 1.3rem !important;
+  }
+
+  .titleHeaderDiv,
+  .headerFooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+  /* experience work */
+
+  #sectSkillsWorkExperience div {
+    padding: 0px;
+    margin: 1rem 0rem !important;
+    width: 100% !important;
+  }
+  
+  #sectSkillsWorkExperience .DevTextHeader {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #sectSkillsWorkExperience h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  #Boolean>div.ms-5>h1 {
+    padding: 0px !important;
+    margin: 0rem !important;
+    font-size: 2.5rem;
+  }
+
+  #Systrategy>div.ms-5>h1 {
+    font-size: 2.5rem !important;
+    padding: 0px !important;
+    margin: 0rem !important;
+  }
+
+  #EV>div.ms-5>h1 {
+    font-size: 2.5rem !important;
+    padding: 0px !important;
+    margin: 0rem !important;
+  }
+
+  #Boolean>div.container>div {
+    font-size: 1.1rem;
+  }
+
+  #Systrategy>div.container>div {
+    font-size: 1.1rem;
+  }
+
+  #EV>div.container>div {
+    font-size: 1.1rem;
+  }
+
+
+  #Boolean>div.container>div>div>div>h1,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #Systrategy>div.container>div>div>div>h1,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #EV>div.container>div>div>div>h1,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+
+  .experience .DevTextHeader::after {
+    margin-left: 5px;
+  }
+
+  #Systrategy .DevTextHeader::after {
+    margin-left: 7px;
+  }
+
+  #EV .DevTextHeader::after {
+    margin-left: 7px;
+  }
+
+  .experience .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+  #Systrategy .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+  #EV .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+
+  .experience .colorLightBlue {
+    font-size: 1.5rem;
+  }
+
+  #Boolean,
+  #Systrategy,
+  #EV {
+    margin: 0px 2rem;
+    line-height: 1.3rem;
+  }
+
+
+  #Boolean .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  #Systrategy .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  #EV .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  #sectionFooter .DevTextHeader,
+  .colorLightBlue {
+    font-size: 3rem;
+  }
+
+  .footerFooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #contactContainer {
+    width: 20% !important;
+  }
+
+  #contactContainerHeader {
+    width: 20% !important;
+  }
+
+  #root>div>header>div {
+    margin: 2rem 1.5rem;
+  }
+
+
+
 }
-
-.timeline li:first-child::before {
-  content: "\f015";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-
-.timeline li:nth-child(2)::before {
-  content: "\f015";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 10px;
-}
-
-.timeline li:after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #162E83;
-  top: 25px;
-  left: -50%;
-  z-index: -999;
-}
-
-.timeline li:first-child:after{
-  content: none;
-}
-
-.topList p:nth-child(2) {
-  position: absolute;
-  bottom: 4.3rem;
-}
-
-.topList p:nth-child(1) {
-  position: absolute;
-  bottom: 10.5rem;
-} */

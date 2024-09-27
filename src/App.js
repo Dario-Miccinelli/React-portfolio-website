@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -14,29 +15,34 @@ function App() {
       {/* Header Section */}
       <header className="bg-custom-blue text-white py-5 vh-100 d-flex">
         <div className="container align-items-between d-flex flex-column justify-content-between">
-          <div className="d-flex">
-            <h1 className='Title-Header w-75'>Hej, I’m <br></br> &lt;Dario Miccinelli /&gt; </h1>
+          <div className="d-flex titleHeaderDiv">
+            <h1 id="Title-Header" className='Title-Header w-75'>Hej, I’m <br></br> &lt;Dario Miccinelli /&gt; </h1>
 
-            <h4 className='w-25'> <FontAwesomeIcon icon={faLocationDot} size="1x" /> Based in Aarhus</h4>
+            <h4 className='w-25'> <FontAwesomeIcon icon={faLocationDot} size="1x" className='' /> Based in Aarhus</h4>
           </div>
 
 
-          <div className='d-flex align-items-end'>
-            <div className="d-flex flex-column gap-3 w-25">
-              <div className='d-flex gap-3'>
-                <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                <FontAwesomeIcon icon={faGithub} size="2x" />
+          <div className='d-flex align-items-end headerFooterDiv'>
+            <div id='contactContainerHeader' className="d-flex flex-column gap-3 w-25">
+              <div  className='d-flex gap-3'>
+
+                <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener">
+                  <FontAwesomeIcon icon={faPhone} size="2x" className='FontAwesomeIcon' /></a>
+                <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-decoration-none text-white" target="_blank" rel="noopener"> <FontAwesomeIcon icon={faEnvelope} className="FontAwesomeIcon" size="2x" /></a>
+                <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faLinkedin} className="FontAwesomeIcon" size="2x" /> </a>
+                <a href="https://github.com/Dario-Miccinelli" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faGithub} className="FontAwesomeIcon" size="2x" /> </a>
 
               </div>
 
-              <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-white" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-              <a href="https://github.com/Dario-Miccinelli" className="text-white" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-              <p>Email: <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-white">DarioMiccinelliDK@outlook.com</a></p>
-              <p>Phone: +45 91738559</p>
+              <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-white headerLink" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              <a href="https://github.com/Dario-Miccinelli" className="text-white headerLink" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+              <p className='headerLink'>Email: <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-white headerLink">DarioMiccinelliDK@outlook.com</a></p>
+              <p className='headerLink'>Phone: +45 91738559</p>
+
+
             </div>
 
-            <div className="d-flex w-75 justify-content-end text-end">
+            <div className="d-flex w-75 justify-content-end text-end" id="devTextDiv">
               <h1 className='DevTextHeader'>Full Stack Developer</h1>
             </div>
 
@@ -45,10 +51,10 @@ function App() {
       </header>
 
       {/* About Me Section */}
-      <section className="about-me vh-100 d-flex">
-        <div className="d-flex">
+      <section className="vh-100 d-flex">
+        <div  id="about-me" className="d-flex">
 
-          <div className='w-75 p-5 m-5'>
+          <div className='w-75 p-5 m-5' id='AboutMeText'>
             <h2 className="fw-bold mb-3 colorLightBlue">About me</h2>
             <h1 className='fw-bold mb-4'>Dario Miccinelli</h1>
             <p className="fw-medium fs-4">
@@ -56,7 +62,7 @@ function App() {
             </p>
           </div>
 
-          <div className=''>
+          <div className='PersonalImage'>
             <img className='ImgAboutMe' src='DarioM.png' alt='personalpic'></img>
           </div>
 
@@ -64,47 +70,47 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section className="bg-custom-blue vh-100">
+      <section className="bg-custom-blue vh-100" id='sectSkillsWorkExperience'>
         <div className="d-flex flex-column pt-5 ps-5 ms-5">
           <h2 className="colorLightGrey mt-2">My Skills</h2>
           <h1 className="text-white mt-2 fw-bold">Work Experience</h1>
         </div>
 
         <a href='#Boolean' className='text-decoration-none'>
-        <div className="d-flex w-50 justify-content-center text-center mt-5 pt-5">
-          <h1 className='DevTextHeader w-25'>01</h1>
-          <div className='d-flex flex-column align-self-center ms-5 text-start'>
-            <h2 className='colorLightGrey'>Boolean Careers | 6 months</h2>
-            <h1 className='text-white'>Full Stack Web Developer</h1>
+          <div className="d-flex w-50 justify-content-center text-center mt-5 pt-5">
+            <h1 className='DevTextHeader w-25'>01</h1>
+            <div className='d-flex flex-column align-self-center ms-5 text-start'>
+              <h2 className='colorLightGrey'>Boolean Careers | 6 months</h2>
+              <h1 className='text-white'>Full Stack Web Developer</h1>
+            </div>
           </div>
-        </div>
         </a>
 
         <a href='#Systrategy' className='text-decoration-none'>
-        <div className="d-flex w-50 justify-content-center text-center mt-5 pt-5">
-          <h1 className='DevTextHeader w-25'>02</h1>
-          <div className='d-flex flex-column align-self-center ms-5 text-start'>
-            <h2 className='colorLightGrey'>Systrategy | 1 year</h2>
-            <h1 className='text-white'>Full Stack Web Developer</h1>
+          <div className="d-flex w-50 justify-content-center text-center mt-5 pt-5">
+            <h1 className='DevTextHeader w-25'>02</h1>
+            <div className='d-flex flex-column align-self-center ms-5 text-start'>
+              <h2 className='colorLightGrey'>Systrategy | 1 year</h2>
+              <h1 className='text-white'>Full Stack Web Developer</h1>
+            </div>
           </div>
-        </div>
         </a>
 
 
         <a href='#EV' className='text-decoration-none'>
-        <div className="d-flex w-50 justify-content-center text-center mt-5 pt-5">
-          <h1 className='DevTextHeader w-25'>03</h1>
-          <div className='d-flex flex-column align-self-center ms-5 text-start'>
-            <h2 className='colorLightGrey'>Eigenmann & Veronelli | 1 year</h2>
-            <h1 className='text-white'>Developer | ERP Specialist</h1>
+          <div className="d-flex w-50 justify-content-center text-center mt-5 pt-5">
+            <h1 className='DevTextHeader w-25'>03</h1>
+            <div className='d-flex flex-column align-self-center ms-5 text-start'>
+              <h2 className='colorLightGrey'>Eigenmann & Veronelli | 1 year</h2>
+              <h1 className='text-white'>Developer | ERP Specialist</h1>
+            </div>
           </div>
-        </div>
         </a>
       </section>
 
       {/* Experience Section Boolean */}
       <section id="Boolean" className="vh-100 align-items-between d-flex flex-column justify-content-evenly experience">
-        <div className="ms-5">
+        <div className="ms-5 experienceTitle">
           <h1 className="colorLightBlue ms-5 ps-5">01 Boolean Careers | 6 months</h1>
           <h1 className="fw-bold ms-5 ps-5">Full Stack Web Developer</h1>
         </div>
@@ -173,7 +179,7 @@ function App() {
       </section>
       {/* Systrategy Section */}
       <section id="Systrategy" className="experience vh-100 align-items-between d-flex flex-column justify-content-evenly">
-        <div className="ms-5">
+        <div className="ms-5 experienceTitle">
           <h1 className="colorLightBlue ms-5 ps-5">02 Systrategy | 1 year</h1>
           <h1 className="fw-bold ms-5 ps-5">Full Stack Web Developer</h1>
         </div>
@@ -241,9 +247,9 @@ function App() {
 
       </section>
       {/* E&V Section */}
-     
+
       <section id="EV" className="experience vh-100 align-items-between d-flex flex-column justify-content-evenly">
-        <div className="ms-5">
+        <div className="ms-5 experienceTitle">
           <h1 className="colorLightBlue ms-5 ps-5">03  Eigenmann & Veronelli | 1 year</h1>
           <h1 className="fw-bold ms-5 ps-5">Developer and ERP Specialist</h1>
         </div>
@@ -310,30 +316,37 @@ function App() {
         </div>
 
       </section>
-     
+
 
       {/* Footer */}
 
-      <section className="bg-custom-blue text-white py-5 vh-100 d-flex">
+      <section id="sectionFooter" className="bg-custom-blue text-white py-5 vh-100 d-flex">
         <div className="container align-items-between d-flex flex-column justify-content-between">
           <div className="d-flex justify-content-end">
             <h4 className=''> <FontAwesomeIcon icon={faLocationDot} size="1x" /> Based in Aarhus</h4>
           </div>
 
 
-          <div className='d-flex align-items-end'>
-            <div className="d-flex flex-column gap-3 w-25">
+          <div className='d-flex align-items-end footerFooterDiv'>
+            <div id="contactContainer" className="d-flex flex-column gap-3 w-25">
               <div className='d-flex gap-3'>
-                <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                <FontAwesomeIcon icon={faGithub} size="2x" />
+
+                <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener">
+                  <FontAwesomeIcon icon={faPhone} size="2x" className='FontAwesomeIcon' /></a>
+                <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-decoration-none text-white" target="_blank" rel="noopener"> <FontAwesomeIcon icon={faEnvelope} className="FontAwesomeIcon" size="2x" /></a>
+                <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faLinkedin} className="FontAwesomeIcon" size="2x" /> </a>
+                <a href="https://github.com/Dario-Miccinelli" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faGithub} className="FontAwesomeIcon" size="2x" /> </a>
+
+
+
+
 
               </div>
 
-              <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-white" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-              <a href="https://github.com/Dario-Miccinelli" className="text-white" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-              <p>Email: <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-white">DarioMiccinelliDK@outlook.com</a></p>
-              <p>Phone: +45 91738559</p>
+              <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-white headerLink" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              <a href="https://github.com/Dario-Miccinelli" className="text-white headerLink" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+              <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-white headerLink">Email: DarioMiccinelliDK@outlook.com</a>
+              <a href="tel:+45 91738559" className="text-white headerLink">Phone: +45 91738559</a>
             </div>
 
             <div className="d-flex flex-column w-75 justify-content-end text-end">
@@ -344,7 +357,7 @@ function App() {
           </div>
         </div>
       </section>
-      <footer className="bg-dark text-white text-center py-3">
+      <footer className="bg-dark text-white text-center py-2">
         <p>&copy; 2024 Dario Miccinelli. All rights reserved.</p>
       </footer>
     </div>
