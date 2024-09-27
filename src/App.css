@@ -105,10 +105,10 @@ body {
     width: 100% !important;
   }
 
-  #sectSkillsWorkExperience h1,
-  h2 {
-    font-size: 2rem;
+  #sectSkillsWorkExperience h1,h2 {
+    font-size: 1.5rem;
   }
+
 
   #Boolean>div.ms-5>h1 {
     padding: 0px !important;
