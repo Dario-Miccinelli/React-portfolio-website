@@ -7,6 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import PersonalPicture from './assets/PersonalPicture.png'
 
 function App() {
   return (
@@ -18,13 +19,13 @@ function App() {
           <div className="d-flex titleHeaderDiv">
             <h1 id="Title-Header" className='Title-Header w-75'>Hej, I’m <br></br> &lt;Dario Miccinelli /&gt; </h1>
 
-            <h4 id='basedInAarhus' className='w-25'> <FontAwesomeIcon icon={faLocationDot} size="1x" className=''/> Based in Aarhus</h4>
+            <h4 id='basedInAarhus' className='w-25'> <FontAwesomeIcon icon={faLocationDot} size="1x" className='' /> Based in Aarhus</h4>
           </div>
 
 
           <div className='d-flex align-items-end headerFooterDiv'>
             <div id='contactContainerHeader' className="d-flex flex-column gap-3 w-25">
-              <div  className='d-flex gap-3'>
+              <div className='d-flex gap-3'>
 
                 <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faPhone} size="2x" className='FontAwesomeIcon' /></a>
@@ -52,7 +53,7 @@ function App() {
 
       {/* About Me Section */}
       <section className="vh-100 d-flex">
-        <div  id="about-me" className="d-flex">
+        <div id="about-me" className="d-flex">
 
           <div className='w-75 p-5 m-5' id='AboutMeText'>
             <h2 className="fw-bold mb-3 colorLightBlue">About me</h2>
@@ -63,7 +64,7 @@ function App() {
           </div>
 
           <div className='PersonalImage'>
-            <img className='ImgAboutMe' src='./assets/PersonalPicture.png' alt='Dario Miccinelli pic'></img>
+            <img className='ImgAboutMe' src={PersonalPicture} alt='Dario Miccinelli pic' />
           </div>
 
         </div>

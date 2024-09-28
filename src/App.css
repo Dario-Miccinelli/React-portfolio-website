@@ -255,7 +255,7 @@ body {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1700px) {
 
 
   #Title-Header {
@@ -458,13 +458,14 @@ body {
 
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1700px) {
+
 
 
   .PersonalImage {
     display: none;
   }
-  
+
   .Title-Header {
     font-size: 3.5rem;
   }
@@ -475,15 +476,15 @@ body {
   }
 
   .FontAwesomeIcon {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #AboutMeText {
-    padding: 0px !important;
+    padding: 1rem!important;
   }
 
   #AboutMeText p {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
   }
 
   .titleHeaderDiv,
@@ -495,18 +496,8 @@ body {
 
 
   /* experience work */
-
-  #sectSkillsWorkExperience div {
-    padding: 0px;
-    margin: 1rem 0rem !important;
-    width: 100% !important;
-  }
-
   #sectSkillsWorkExperience .DevTextHeader {
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 6rem;
   }
 
   #sectSkillsWorkExperience h1,
@@ -515,134 +506,74 @@ body {
   }
 
   #Boolean>div.ms-5>h1 {
-    padding: 0px !important;
-    margin: 0rem !important;
-    font-size: 2.5rem;
+    font-size: 3rem !important;
   }
 
   #Systrategy>div.ms-5>h1 {
-    font-size: 2.5rem !important;
-    padding: 0px !important;
-    margin: 0rem !important;
+    font-size: 3rem !important;
   }
 
   #EV>div.ms-5>h1 {
-    font-size: 2.5rem !important;
-    padding: 0px !important;
-    margin: 0rem !important;
+    font-size: 3rem !important;
   }
 
   #Boolean>div.container>div {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   #Systrategy>div.container>div {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   #EV>div.container>div {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
 
   #Boolean>div.container>div>div>div>h1,
   h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem !important;
+    font-size: 3.5rem;
   }
 
   #Systrategy>div.container>div>div>div>h1,
   h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem !important;
+    font-size: 3.5rem;
   }
 
   #EV>div.container>div>div>div>h1,
   h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem !important;
-  }
-
-
-  .experience .DevTextHeader::after {
-    margin-left: 5px;
-  }
-
-  #Systrategy .DevTextHeader::after {
-    margin-left: 7px;
-  }
-
-  #EV .DevTextHeader::after {
-    margin-left: 7px;
-  }
-
-  .experience .DevTextHeader {
-    -webkit-text-stroke: 1px #0067FE;
-    -webkit-text-fill-color: #162E83;
-  }
-
-  #Systrategy .DevTextHeader {
-    -webkit-text-stroke: 1px #0067FE;
-    -webkit-text-fill-color: #162E83;
-  }
-
-  #EV .DevTextHeader {
-    -webkit-text-stroke: 1px #0067FE;
-    -webkit-text-fill-color: #162E83;
+    font-size: 3.5rem;
   }
 
 
   .experience .colorLightBlue {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   #Boolean,
   #Systrategy,
   #EV {
-    margin: 0px 2rem;
-    line-height: 1.3rem;
+    margin: 0px 3rem;
+    line-height: 1.5rem;
   }
 
-
-  #Boolean .experienceTitle {
-    margin: 0rem 0.5rem !important;
-  }
-
-  #Systrategy .experienceTitle {
-    margin: 0rem 0.5rem !important;
-  }
-
-  #EV .experienceTitle {
-    margin: 0rem 0.5rem !important;
-  }
-
-  .headerLink {
-    display: none;
-  }
 
   #sectionFooter .DevTextHeader,
   .colorLightBlue {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
-  .footerFooterDiv {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  #contactContainer {
-    width: 20% !important;
-  }
-
-  #contactContainerHeader {
-    width: 20% !important;
-  }
 
   #root>div>header>div {
-    margin: 2rem 1.5rem;
+    margin: 3rem 5.5rem;
   }
 
 
 
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1800px) { 
+.ImgAboutMe {
+  display: none;
+}
 }
