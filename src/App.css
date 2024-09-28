@@ -105,7 +105,8 @@ body {
     width: 100% !important;
   }
 
-  #sectSkillsWorkExperience h1,h2 {
+  #sectSkillsWorkExperience h1,
+  h2 {
     font-size: 1.5rem;
   }
 
@@ -153,12 +154,12 @@ body {
     margin-bottom: 0rem !important;
   }
 
-  #EV>div.container>div>div>div>h1{
+  #EV>div.container>div>div>div>h1 {
     font-size: 1.3rem;
     margin-bottom: 0.1rem !important;
   }
 
-  #EV>div.container>div>div>div>h3{
+  #EV>div.container>div>div>div>h3 {
     font-size: 1.2rem;
     margin-bottom: 0.1rem !important;
   }
@@ -246,11 +247,15 @@ body {
     margin: 1rem 0.8rem;
   }
 
+  #basedInAarhus {
+    width: 50% !important;
+  }
+
 
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 850px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
 
 
   #Title-Header {
@@ -307,13 +312,198 @@ body {
     margin: 1rem 0rem !important;
     width: 100% !important;
   }
-  
+
   #sectSkillsWorkExperience .DevTextHeader {
     font-size: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  #sectSkillsWorkExperience h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  #Boolean>div.ms-5>h1 {
+    padding: 0px !important;
+    margin: 0rem !important;
+    font-size: 2.5rem;
+  }
+
+  #Systrategy>div.ms-5>h1 {
+    font-size: 2.5rem !important;
+    padding: 0px !important;
+    margin: 0rem !important;
+  }
+
+  #EV>div.ms-5>h1 {
+    font-size: 2.5rem !important;
+    padding: 0px !important;
+    margin: 0rem !important;
+  }
+
+  #Boolean>div.container>div {
+    font-size: 1.1rem;
+  }
+
+  #Systrategy>div.container>div {
+    font-size: 1.1rem;
+  }
+
+  #EV>div.container>div {
+    font-size: 1.1rem;
+  }
+
+
+  #Boolean>div.container>div>div>div>h1,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #Systrategy>div.container>div>div>div>h1,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #EV>div.container>div>div>div>h1,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+
+  .experience .DevTextHeader::after {
+    margin-left: 5px;
+  }
+
+  #Systrategy .DevTextHeader::after {
+    margin-left: 7px;
+  }
+
+  #EV .DevTextHeader::after {
+    margin-left: 7px;
+  }
+
+  .experience .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+  #Systrategy .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+  #EV .DevTextHeader {
+    -webkit-text-stroke: 1px #0067FE;
+    -webkit-text-fill-color: #162E83;
+  }
+
+
+  .experience .colorLightBlue {
+    font-size: 1.5rem;
+  }
+
+  #Boolean,
+  #Systrategy,
+  #EV {
+    margin: 0px 2rem;
+    line-height: 1.3rem;
+  }
+
+
+  #Boolean .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  #Systrategy .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  #EV .experienceTitle {
+    margin: 0rem 0.5rem !important;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  #sectionFooter .DevTextHeader,
+  .colorLightBlue {
+    font-size: 3rem;
+  }
+
+  .footerFooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #contactContainer {
+    width: 20% !important;
+  }
+
+  #contactContainerHeader {
+    width: 20% !important;
+  }
+
+  #root>div>header>div {
+    margin: 2rem 1.5rem;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+  .Title-Header {
+    font-size: 3.5rem;
+  }
+
+  .DevTextHeader {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+
+  .FontAwesomeIcon {
+    font-size: 1.8rem;
+  }
+
+  #AboutMeText {
+    padding: 0px !important;
+  }
+
+  #AboutMeText p {
+    font-size: 1.3rem !important;
+  }
+
+  .titleHeaderDiv,
+  .headerFooterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+  /* experience work */
+
+  #sectSkillsWorkExperience div {
+    padding: 0px;
+    margin: 1rem 0rem !important;
+    width: 100% !important;
+  }
+
+  #sectSkillsWorkExperience .DevTextHeader {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #sectSkillsWorkExperience h1,
   h2 {
     font-size: 3rem;

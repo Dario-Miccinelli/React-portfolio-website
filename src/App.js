@@ -18,7 +18,7 @@ function App() {
           <div className="d-flex titleHeaderDiv">
             <h1 id="Title-Header" className='Title-Header w-75'>Hej, I’m <br></br> &lt;Dario Miccinelli /&gt; </h1>
 
-            <h4 className='w-25'> <FontAwesomeIcon icon={faLocationDot} size="1x" className='' /> Based in Aarhus</h4>
+            <h4 id='basedInAarhus' className='w-25'> <FontAwesomeIcon icon={faLocationDot} size="1x" className=''/> Based in Aarhus</h4>
           </div>
 
 
@@ -26,11 +26,11 @@ function App() {
             <div id='contactContainerHeader' className="d-flex flex-column gap-3 w-25">
               <div  className='d-flex gap-3'>
 
-                <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener">
+                <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faPhone} size="2x" className='FontAwesomeIcon' /></a>
-                <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-decoration-none text-white" target="_blank" rel="noopener"> <FontAwesomeIcon icon={faEnvelope} className="FontAwesomeIcon" size="2x" /></a>
-                <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faLinkedin} className="FontAwesomeIcon" size="2x" /> </a>
-                <a href="https://github.com/Dario-Miccinelli" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faGithub} className="FontAwesomeIcon" size="2x" /> </a>
+                <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faEnvelope} className="FontAwesomeIcon" size="2x" /></a>
+                <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon icon={faLinkedin} className="FontAwesomeIcon" size="2x" /> </a>
+                <a href="https://github.com/Dario-Miccinelli" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon icon={faGithub} className="FontAwesomeIcon" size="2x" /> </a>
 
               </div>
 
@@ -63,7 +63,7 @@ function App() {
           </div>
 
           <div className='PersonalImage'>
-            <img className='ImgAboutMe' src='DarioM.png' alt='personalpic'></img>
+            <img className='ImgAboutMe' src='./assets/PersonalPicture.png' alt='Dario Miccinelli pic'></img>
           </div>
 
         </div>
@@ -331,11 +331,11 @@ function App() {
             <div id="contactContainer" className="d-flex flex-column gap-3 w-25">
               <div className='d-flex gap-3'>
 
-                <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener">
+                <a href="tel:+45 91738559" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faPhone} size="2x" className='FontAwesomeIcon' /></a>
-                <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-decoration-none text-white" target="_blank" rel="noopener"> <FontAwesomeIcon icon={faEnvelope} className="FontAwesomeIcon" size="2x" /></a>
-                <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faLinkedin} className="FontAwesomeIcon" size="2x" /> </a>
-                <a href="https://github.com/Dario-Miccinelli" className="text-decoration-none text-white" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faGithub} className="FontAwesomeIcon" size="2x" /> </a>
+                <a href="mailto:DarioMiccinelliDK@outlook.com" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faEnvelope} className="FontAwesomeIcon" size="2x" /></a>
+                <a href="https://www.linkedin.com/in/dariomiccinelli/" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon icon={faLinkedin} className="FontAwesomeIcon" size="2x" /> </a>
+                <a href="https://github.com/Dario-Miccinelli" className="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon icon={faGithub} className="FontAwesomeIcon" size="2x" /> </a>
 
 
 
