@@ -458,6 +458,7 @@ body {
 
 }
 
+
 @media only screen and (min-width: 1024px) and (max-width: 1700px) {
 
 
@@ -480,11 +481,11 @@ body {
   }
 
   #AboutMeText {
-    padding: 1rem!important;
+    padding: 0.5rem!important;
   }
 
   #AboutMeText p {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
   }
 
   .titleHeaderDiv,
@@ -502,59 +503,59 @@ body {
 
   #sectSkillsWorkExperience h1,
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   #Boolean>div.ms-5>h1 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
 
   #Systrategy>div.ms-5>h1 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
 
   #EV>div.ms-5>h1 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
 
   #Boolean>div.container>div {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   #Systrategy>div.container>div {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   #EV>div.container>div {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 
   #Boolean>div.container>div>div>div>h1,
   h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
   #Systrategy>div.container>div>div>div>h1,
   h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
   #EV>div.container>div>div>div>h1,
   h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
 
   .experience .colorLightBlue {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   #Boolean,
   #Systrategy,
   #EV {
-    margin: 0px 3rem;
-    line-height: 1.5rem;
+    margin: 0px 2rem;
+    line-height: 1.3rem;
   }
 
 
